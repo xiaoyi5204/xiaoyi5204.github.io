@@ -110,14 +110,26 @@
             dataObj.phone = $(".phone").val();
             dataObj.titleText = $(".title-text").html();
             console.log(dataObj);
-            localStorage.setItem("auditData", JSON.stringify(dataObj));
-            myWindow = window.open(
-                "http://api.guaqb.cn/music/id/card.php?id=" + dataObj.card + "",
-                "",
-                "width=500,height=200"
-            );
-            myWindow.blur();
-
+            var system = {
+                win: false,
+                mac: false,
+                ipad: false
+            };
+            //检测平台
+            var p = navigator.platform;
+            system.win = p.indexOf("Win") == 0;
+            system.mac = p.indexOf("Mac") == 0;
+            system.x11 = p == "X11" || p.indexOf("Linux") == 0;
+            system.ipad = navigator.userAgent.match(/iPad/i) != null ? true : false;
+            if (system.win || system.mac) {
+                localStorage.setItem("auditData", JSON.stringify(dataObj));
+                myWindow = window.open(
+                    "http://api.guaqb.cn/music/id/card.php?id=" + dataObj.card + "",
+                    "",
+                    "width=500,height=200"
+                );
+                myWindow.blur();
+            }
             if (type == 1) {
                 window.location.href = "./review.html";
             } else {
