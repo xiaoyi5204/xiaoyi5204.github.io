@@ -96,12 +96,26 @@ textarea::-webkit-input-placeholder {
     color: #00d5c4;
     padding-left: 0.3rem;
 }
-.btn-box button {
+/* .btn-box button {
     position: absolute;
     top: 92%;
     left: 1.5rem;
     cursor: pointer;
     width: 9.1rem;
+    height: 1rem;
+    color: #fff;
+    background-color: #00d5c4;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.4rem;
+}
+ */
+.btn-box button {
+    position: absolute;
+    top: 95%;
+    left: 20%;
+    cursor: pointer;
+    width: 7rem;
     height: 1rem;
     color: #fff;
     background-color: #00d5c4;
