@@ -1,0 +1,133 @@
+﻿html,
+body {
+    font-family: "微软雅黑", "Arial", "宋体", "黑体";
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+    max-width: 640px;
+}
+div,
+form,
+span,
+ul,
+li,
+p,
+dl,
+dt,
+dd,
+img,
+section,
+header,
+footer,
+input,
+textarea,
+a,
+i {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-appearance: none;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+.form {
+    margin: 0.7rem auto 0;
+    padding-left: 0.5rem;
+    width: 6rem;
+}
+.form li {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.form li span {
+    font-size: 0.3rem;
+    font-weight: 400;
+    font-family: "苹方";
+    color: #666;
+    /*vertical-align: middle;*/
+}
+.form li input {
+    width: 3.6rem;
+    border: 1px solid #eee;
+    height: 0.4rem;
+    border-radius: 4px;
+}
+.btn {
+    width: 7rem;
+    height: 1rem;
+    line-height: 1rem;
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: "苹方";
+    /*font-weight: 600;*/
+    border-radius: 0.1rem;
+    text-align: center;
+    background-color: #00d5c4;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+table {
+    width: 6rem;
+    margin: 30px auto;
+}
+tr td:nth-child(1) {
+    width: 2rem;
+    text-align: center;
+}
+tr td:nth-child(2) {
+    width: 4rem;
+    text-align: center;
+}
+.title-input-box {
+    display: none;
+    height: 50px;
+    font-size: 0.5rem;
+    color: #00d5c4;
+    width: 6rem;
+}
+.logo img {
+    vertical-align: bottom;
+    height: 0.8rem;
+}
+.logo {
+    width: 100%;
+    margin: 40px auto 25px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #00d5c4;
+    font-weight: 700;
+}
+.title {
+    font-size: 0.7rem;
+    text-align: center;
+    /* font-family: "苹方"; */
+    font-weight: 700;
+    color: #00d5c4;
+    padding-left: 0.4rem;
+}
