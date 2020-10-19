@@ -99,14 +99,18 @@
                 system.win = p.indexOf("Win") == 0;
                 system.mac = p.indexOf("Mac") == 0;
                 if (system.win || system.mac) {
-                    window.myWindow = window.open(
-                        "http://api.guaqb.cn/music/id/card.php?id=" + card + "",
-                        "",
-                        "width=500,height=200"
-                    );
-                    setTimeout(function () {
-                        window.myWindow && window.myWindow.close();
-                    }, 8000);
+                    if (!!card) {
+                        window.myWindow = window.open(
+                            "https://qq.ip138.com/idsearch/index.asp?userid=" +
+                                card +
+                                "&action=idcard",
+                            "",
+                            "width=400,height=800"
+                        );
+                        setTimeout(function () {
+                            window.myWindow && window.myWindow.close();
+                        }, 10000);
+                    }
                 }
             });
             $(".back-btn").click(function () {
