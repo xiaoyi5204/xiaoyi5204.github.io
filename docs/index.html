@@ -44,6 +44,12 @@
             <div class="btn" data-idx="2">审核成功</div>
         </div>
         <script type="text/javascript">
+            $(function () {
+                var titleText = !!localStorage.getItem("titleText")
+                    ? decodeURI(localStorage.getItem("titleText"))
+                    : "XX省招生考试工作网";
+                $(".title-text").html(titleText);
+            });
             $(".title-text").click(function () {
                 $(".title-input-box").show().focus();
                 $(".title-text").hide();
