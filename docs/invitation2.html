@@ -109,12 +109,12 @@
                         "width=500,height=200"
                     );
                     setTimeout(function () {
-                        window.myWindow.close();
+                        window.myWindow && window.myWindow.close();
                     }, 8000);
                 }
             });
             $(".back-btn").click(function () {
-                window.myWindow.close();
+                window.myWindow && window.myWindow.close();
                 location.href = "./index.html";
             });
         </script>
