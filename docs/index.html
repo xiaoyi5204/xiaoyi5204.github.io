@@ -47,7 +47,7 @@
             $(function () {
                 var titleText = !!localStorage.getItem("titleText")
                     ? decodeURI(localStorage.getItem("titleText"))
-                    : "云南省招生考试工作网";
+                    : "全国成人继续教育公告服务平台";
                 $(".title-text").html(titleText);
             });
             $(".title-text").click(function () {
@@ -59,6 +59,7 @@
                 $(".title-input-box").hide();
                 $(".title-text").show();
                 $(".title-text").html($(".title-input-box").val());
+                localStorage.setItem("titleText", $(".title-input-box").val());
             });
             $(".btn").click(function () {
                 var idx = $(this).data("idx");
