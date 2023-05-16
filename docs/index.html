@@ -37,7 +37,7 @@
                 <li><span>志愿院校:</span> <input class="university" type="text" /></li>
                 <li><span>志愿专业:</span> <input class="major" type="text" /></li>
                 <li><span>预约时间:</span> <input class="phone" type="text" /></li>
-<!--                 <li><span>身份证号:</span> <input class="card" type="text" /></li> -->
+<!--            <li style="display:none;"><span>身份证号:</span> <input class="card" type="text" /></li> -->
                 
             </ul>
             <div class="btn" data-idx="1">开始审核</div>
@@ -65,7 +65,7 @@
                 var idx = $(this).data("idx");
                 var name = encodeURI($(".name").val());
                 var sex = encodeURI($(".sex").val());
-                var card = encodeURI($(".card").val());
+//              var card = encodeURI($(".card").val());
                 var education = encodeURI($(".education").val());
                 var stage = encodeURI($(".stage").val());
                 var university = encodeURI($(".university").val());
@@ -78,7 +78,7 @@
                 var titleText = encodeURI($(".title-text").text());
                 localStorage.setItem("name", name);
                 localStorage.setItem("sex", sex);
-                localStorage.setItem("card", card);
+//              localStorage.setItem("card", card);
                 localStorage.setItem("education", education);
                 localStorage.setItem("stage", stage);
                 localStorage.setItem("university", university);
