@@ -37,16 +37,8 @@
                     <span class="name">13588899969</span>
                 </div>
                 <div>
-                    学员性别:&nbsp;
+                    初审编号:&nbsp;
                     <span class="sex">男</span>
-                </div>
-                <div>
-                    手机号码:&nbsp;
-                    <span class="phone">13588899969</span>
-                </div>
-                <div>
-                    身份证号:&nbsp;
-                    <span class="card">239005199004113025</span>
                 </div>
                 <div>
                     最高学历:&nbsp;
@@ -64,6 +56,14 @@
                     志愿专业:&nbsp;
                     <span class="major">金融学</span>
                 </div>
+                <div>
+                    预约时间:&nbsp;
+                    <span class="phone">13588899969</span>
+                </div>
+<!--            <div>
+                    身份证号:&nbsp;
+                    <span class="card">239005199004113025</span>
+                </div> -->
             </div>
             <div class="jieguo">
                 <p>
@@ -78,7 +78,7 @@
             $(function () {
                 var name = decodeURI(localStorage.getItem("name"));
                 var sex = decodeURI(localStorage.getItem("sex"));
-                var card = decodeURI(localStorage.getItem("card"));
+//              var card = decodeURI(localStorage.getItem("card"));
                 var phone = decodeURI(localStorage.getItem("phone"));
                 var education = decodeURI(localStorage.getItem("education"));
                 var stage = decodeURI(localStorage.getItem("stage"));
@@ -87,7 +87,7 @@
                 var titleText = decodeURI(localStorage.getItem("titleText"));
                 $(".name").html(name);
                 $(".sex").html(sex);
-                $(".card").html(card);
+//              $(".card").html(card);
                 $(".phone").html(phone);
                 $(".education").html(education);
                 $(".stage").html(stage);
